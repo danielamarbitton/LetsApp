@@ -1,3 +1,8 @@
+/*
+
+Unused code for AWS S#
+
+
 const { CreateBucketCommand } = require('@aws-sdk/client-s3');
 const aws = require('aws-sdk');
 const multer = require('multer');
@@ -30,3 +35,5 @@ exports.uploadPic = (req, res, next) => {
 
   res.status(200).json({data: req.body})
 }
+
+*/

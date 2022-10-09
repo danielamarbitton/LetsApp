@@ -1,6 +1,11 @@
 import React, { useContext, useState, useEffect } from "react";
 import { auth } from "../firebase";
 
+/* 
+AuthContext uses the various firebase function to achieve functions like login, signup, etc..
+Props are passed from either the login, sign up or updateprofile pages.
+*/
+
 const AuthContext = React.createContext();
 
 export function useAuth(){

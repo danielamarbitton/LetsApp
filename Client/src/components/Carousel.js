@@ -4,10 +4,17 @@ import { useRef, useEffect, useState } from "react";
 import picnic from "../assets/picnic";
 import { motion } from "framer-motion";
 
+/*The Carrousel Component is used on the home page to render the various albums "memories" of the user
+  using motion from framer smooth animation is achieved. Carrousel should recieve a props array of images fetched from the database 
+*/
+
 const Carousel = (array) => {
+
+  /* the width useState is used in tandem with the car useRef in order to figure exactly how long the carrousel is to render its proper width without overflow*/
   const [width, setWidth] = useState(0);
   const car = useRef();
 
+  /* this useEffect updates the width of the carrousel once the page is rendered */
   useEffect(() => {
     setWidth(car.current.scrollWidth - car.current.offsetWidth);
   }, []);

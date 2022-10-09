@@ -1,6 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
+/*
+The Card component render the face of the card or the back of the card  using the props flipped. the card prop is the information neccessary to render the img
+*/
+
 const Card = ({ card, handleChoice, flipped }) => {
   const handleClick = () => {
     handleChoice(card);

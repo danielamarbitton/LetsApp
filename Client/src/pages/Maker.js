@@ -1,12 +1,19 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
+//Maker is a page that allows a user to upload a polariod type of post containing an image and some text
+
 const Maker = () => {
 
   const [description, setDescription] = useState("");
   const [image, setImage] = useState("");
+  
+  //save the url of the posted image and should be posted to the database for later retrieval
   const [ url, setUrl ] = useState("");
 
+  //The main function to upload the image file to cloudinary
+  //A form is used to post the image
+  //Upload preset and cloud name are not sensitive but will be put in an env file
 
   const uploadImage = async (e) => {
     e.preventDefault();

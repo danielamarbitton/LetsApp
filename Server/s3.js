@@ -1,4 +1,4 @@
-require('dotenv').config()
+/* require('dotenv').config()
 const fs = require('fs')
 const S3 = require('aws-sdk/clients/s3')
 
@@ -37,4 +37,4 @@ function getFileStream(fileKey) {
 
   return s3.getObject(downloadParams).createReadStream()
 }
-exports.getFileStream = getFileStream
+exports.getFileStream = getFileStream */

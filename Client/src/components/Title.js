@@ -1,6 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
+/*
+Title component render titles at the top of Pages, a word is passed as props
+*/
+
+
 const Title = ({title}) => {
   return ( 
     <Word>{title}</Word>

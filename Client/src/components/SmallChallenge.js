@@ -1,6 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
+/*
+SmallChallenge component renders the small card using props {img, icon, title, info} from an array passed from the Challenge Page
+*/
+
+
+
 const SmallChallenge = ({img, icon, title, info}) => {
 
   console.log(img)

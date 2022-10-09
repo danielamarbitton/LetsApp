@@ -18,6 +18,10 @@ import PrivateRoute from "./PrivateRoute";
 import ForgotPassword from "./pages/ForgotPassword";
 import UpdateProfile from "./pages/UpdateProfile";
 
+/*
+Idendentation of route in routes is necessary for rendering sidebar on certain pages and not other 
+*/
+
 const App = () => {
   return (
     <AuthProvider>

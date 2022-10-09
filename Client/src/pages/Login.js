@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import Logo from "../assets/Logo";
 import { useAuth } from "../context/AuthContext";
 
+//useRefs are used to keep current values of password and email. These values are use to pass as parameters to the firbase auth login function
+
 const Signup = () => {
 
   const navigate = useNavigate();
@@ -13,11 +15,8 @@ const Signup = () => {
   const [error,setError] = useState('');
   const [loading, setLoading] = useState(false);
     
-
-
   const handleSubmit = async (e) => {
     e.preventDefault()
-
 
     try{
       setError('')
@@ -27,8 +26,6 @@ const Signup = () => {
     } catch {
       setError("Failed to sign in")
     }
-  }
-
 
   return (
     <Container>

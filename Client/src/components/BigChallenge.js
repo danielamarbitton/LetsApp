@@ -1,6 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
+/*
+BigChallenge component renders the larger card using props {img, icon, title, info} from an array passed from the Challenge Page
+*/
+
 const BigChallenge = ({img, icon, title, info}) => {
   return (
     <BigBox>

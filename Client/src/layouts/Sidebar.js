@@ -14,13 +14,17 @@ import { useAuth } from "../context/AuthContext";
 
 const Sidebar = ({children}) => {
 
+
+  // isOpen keeps state if the sidebar is closed or open
   const[isOpen, setIsOpen] = useState(false);
   const[error, setError] = useState('');
   const { logout } = useAuth();
   const navigate = useNavigate();
 
+  //toggle is the function triggered by the onClick event
   const toggle = () => setIsOpen (!isOpen);
 
+  //handleLogout redirects the user to the login page when the logout button is pressed
   const handleLogout = async() => {
     setError('') 
 
@@ -32,6 +36,7 @@ const Sidebar = ({children}) => {
     }
   }
 
+  //menuItems is an array of Objects that is used to render the sidebar and makes it easy to update it by adding objects
   const menuItem = [
     {
       path: "/",

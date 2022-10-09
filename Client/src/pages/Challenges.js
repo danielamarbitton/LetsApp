@@ -6,8 +6,15 @@ import challenges from "../assets/challenges";
 import sponchallenges from "../assets/SponChallenge";
 import Title from "../components/Title";
 
+//The Challenges page render two types of challenges small and big
+
+
 const Challenges = () => {
+
+  //This should be replaced with a fetch to the database for one random sponsered challenge. This object would be passed to BigChallenge component as props
   const sponChallenge = sponchallenges[0];
+
+  //challenges is an array that should be replaced with a fetch that retieve an array of objects of various challenges that the user has accepted or not yet accepted
 
   return (
     <Container>
@@ -18,6 +25,7 @@ const Challenges = () => {
         info={sponChallenge.info}
         img={sponChallenge.img}
       />
+
 
       <Grid>
         {challenges.map((challenge) => (
